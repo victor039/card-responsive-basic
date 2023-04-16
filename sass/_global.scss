@@ -1,0 +1,33 @@
+
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-image: linear-gradient(to top, #171215, #262026, #352f38, #43404d, #505162, #4f5666, #4e5a6a, #4e5f6d, #45565f, #3e4c51, #384344, #333939);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    width:90%;
+    height:100vh;
+    margin:30px auto;
+    
+}
+
+@media screen and (max-width: 968px){
+   
+    .container{
+        width:100%;
+        height:auto;
+        
+    }
+    .container .card{
+        margin:10px ;
+    }
+}

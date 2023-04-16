@@ -1,0 +1,102 @@
+@mixin display{
+        display:flex;
+        justify-content: center;
+        align-items: center; 
+}
+
+
+  
+ 
+.card{
+    
+    width: 300px;
+    height:500px;
+    box-shadow:1px 1px 3px #ccc;
+    border-radius: 10px;
+    overflow:hidden;
+    margin:0 20px;
+   
+    .card-img {
+        width:100%;
+        height:200px;
+        img{
+            width:100%;
+            height:100%;
+        }
+    }
+    .card-info{
+        @include display;
+        flex-direction: column;
+        padding:15px;
+        height:180px;
+        background-color: #fff;
+        
+        h2{
+            margin-bottom:15px;
+        }
+        p{
+            text-align: justify;
+            margin-top:8px;
+        }
+    }
+    .card-data{
+        display:flex;
+        justify-content: space-between;
+        height:89px;
+        color:#fff;
+        .read{
+            @include display;
+            flex-direction: column;
+            width:100px;
+            height:100%;
+
+            .read-p{
+                font-size:20px;
+                font-weight: bold;
+            }
+        }
+       
+        .views{
+            @include display;
+            flex-direction: column;
+            height:100%;
+            width:100px;
+            .views-p{
+                font-size:20px;
+                font-weight: bold;
+            }
+        }
+        .comments{
+            @include display;
+            flex-direction: column;
+            height:100%;
+            width:100px;
+            .comment-p{
+                font-size:20px;
+                font-weight: bold;
+                
+            }
+            
+        }
+
+    }
+    
+    #crucero{
+        background-color: #E40766;
+    }
+    #read{
+        background-color: #FA4E0A;
+    }
+    #data{
+        background-color: #0FA83E;
+    }
+    .green-t{
+        color:#0FA83E;
+    }
+    .orange-t{
+       color: #FA4E0A;
+    }
+    .pink-t{
+       color: #E40766;
+    }
+}
